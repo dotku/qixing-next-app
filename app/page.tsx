@@ -74,7 +74,7 @@ export default function Home() {
             <iframe
               style={{ border: 0 }}
               src="https://v.qq.com/txp/iframe/player.html?vid=q09259fybz7"
-              className="w-full h-48 sm:h-80"
+              className="w-full h-48 sm:h-80 rounded-large"
               allowFullScreen={true}
             ></iframe>
           </CardBody>

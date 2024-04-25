@@ -7,12 +7,13 @@ import Link from "next/link";
 
 // @todo fix the color gen issue
 function CustomizedAvatar({ name, idx }: { name: string; idx: string }) {
-  console.log("idx", idx);
+  const base = `bg-gradient-to-br from-[#FFB157] to-[#FF705B]`;
+  console.log("base", base);
   return (
     <Avatar
       name={name}
       classNames={{
-        base: `bg-gradient-to-br from-[#FFB157] to-[#FF705B]`,
+        base,
         icon: "text-black/80",
       }}
     />
@@ -27,7 +28,7 @@ export default function HelpFeedback() {
       </div>
       <div className="gap-2 grid grid-cols-12">
         <div className="col-span-12 sm:col-span-6">
-          <h2 className="text-3xl ">Address</h2>
+          <h2 className="text-3xl">Address</h2>
           <Card shadow="none">
             <CardBody>
               <div>202 Shangmei Science and Technology</div>
