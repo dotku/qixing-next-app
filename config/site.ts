@@ -87,9 +87,8 @@ export const siteConfig = {
       name: "Abby",
       title: "Au Pair Consultant",
       phone: "+86 18126360492",
-      wa: "+8613540373445",
+      wa: "+8613530373445",
       email: "abby_qixingaupair@126.com",
-      avatar: "/assets/avatars/4691714199405_.pic.jpg",
     },
     {
       name: "Penny",
@@ -97,6 +96,7 @@ export const siteConfig = {
       phone: "+8615338895076",
       wa: "+8615295528812",
       email: "Qixingpenny2024@outlook.com",
+      avatar: "/assets/avatars/4691714199405_.pic.jpg",
     },
   ],
 };
