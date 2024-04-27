@@ -5,27 +5,17 @@ import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Image,
-  Button,
-} from "@nextui-org/react";
+import { Card, CardBody } from "@nextui-org/react";
 import HelpFeedback from "./contact/page";
+import TrailerVideo from "@/components/Marketing/TrailerVideo";
+import HeroBanner from "@/components/Marketing/HeroBanner";
 
 export default function Home() {
   return (
     <div>
       <section className="gap-2 grid grid-cols-12">
         <Card className="w-full col-span-12 ">
-          <Image
-            removeWrapper
-            src="https://aimg8.dlssyht.cn/u/1843036/ev_user_module_content_tmp/2019_06_20/tmp1561015550_1843036_s.jpg"
-            className="z-0 w-full h-full object-cover h-80 sm:h-96"
-            alt="qixing members"
-          />
+          <HeroBanner />
         </Card>
       </section>
       <section className="gap-2 grid grid-cols-12 mt-8">
@@ -71,12 +61,7 @@ export default function Home() {
         </Card>
         <Card className="w-full col-span-12 sm:col-span-6" shadow="none">
           <CardBody className="flex items-center content-center">
-            <iframe
-              style={{ border: 0 }}
-              src="https://v.qq.com/txp/iframe/player.html?vid=q09259fybz7"
-              className="w-full h-48 sm:h-80 rounded-large"
-              allowFullScreen={true}
-            ></iframe>
+            <TrailerVideo />
           </CardBody>
         </Card>
       </section>

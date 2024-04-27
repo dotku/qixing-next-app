@@ -6,10 +6,10 @@ export const siteConfig = {
   	China, dedicated to promoting cultural exchange between China and the rest
 	of the world.`,
   navItems: [
-    {
-      label: "Home",
-      href: "/",
-    },
+    // {
+    //   label: "Home",
+    //   href: "/",
+    // },
     // {
     //   label: "Docs",
     //   href: "/docs",
@@ -22,10 +22,10 @@ export const siteConfig = {
     //   label: "Blog",
     //   href: "/blog",
     // },
-    {
-      label: "About",
-      href: "/about",
-    },
+    // {
+    //   label: "About",
+    //   href: "/about",
+    // },
   ],
   navMenuItems: [
     // {
@@ -40,10 +40,10 @@ export const siteConfig = {
     //   label: "Projects",
     //   href: "/projects",
     // },
-    {
-      label: "About",
-      href: "/about",
-    },
+    // {
+    //   label: "About",
+    //   href: "/about",
+    // },
     // {
     //   label: "Calendar",
     //   href: "/calendar",
@@ -52,10 +52,10 @@ export const siteConfig = {
     //   label: "Settings",
     //   href: "/settings",
     // },
-    {
-      label: "Contact",
-      href: "/contact",
-    },
+    // {
+    //   label: "Contact",
+    //   href: "/contact",
+    // },
     // {
     //   label: "Logout",
     //   href: "/logout",
@@ -69,16 +69,33 @@ export const siteConfig = {
     sponsor: "https://patreon.com/jrgarciadev",
   },
   contacts: [
-    { name: "Martin", phone: "17727480609", email: "martin97mmh@gmail.com" },
     {
-      name: "Xu Tianyun",
-      phone: "18126364051",
+      name: "Martin",
+      phone: "+86 17727480609",
+      wa: "+8617727480609",
+      title: "Au Pair Consultant",
+      email: "martin97mmh@gmail.com",
+      avatar: "/assets/avatars/4681714182498_.pic.jpg",
+    },
+    {
+      name: "Tianyun Xu",
+      title: "Au Pair Consultant",
+      phone: "+86 18126364051",
       email: "xutianyun94@gmail.com",
     },
-    { name: "Abby", phone: "18126360492", email: "abby_qixingaupair@126.com" },
+    {
+      name: "Abby",
+      title: "Au Pair Consultant",
+      phone: "+86 18126360492",
+      wa: "+8613540373445",
+      email: "abby_qixingaupair@126.com",
+      avatar: "/assets/avatars/4691714199405_.pic.jpg",
+    },
     {
       name: "Penny",
-      phone: "15338895076",
+      title: "Au Pair Consultant",
+      phone: "+8615338895076",
+      wa: "+8615295528812",
       email: "Qixingpenny2024@outlook.com",
     },
   ],

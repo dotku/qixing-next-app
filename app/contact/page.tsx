@@ -6,12 +6,21 @@ import { Avatar, Card, CardBody, CardHeader } from "@nextui-org/react";
 import Link from "next/link";
 
 // @todo fix the color gen issue
-function CustomizedAvatar({ name, idx }: { name: string; idx: string }) {
+function CustomizedAvatar({
+  name,
+  avatar,
+  idx,
+}: {
+  name: string;
+  avatar: string;
+  idx: string;
+}) {
   const base = `bg-gradient-to-br from-[#FFB157] to-[#FF705B]`;
   console.log("base", base);
   return (
     <Avatar
       name={name}
+      src={avatar}
       classNames={{
         base,
         icon: "text-black/80",
@@ -44,10 +53,16 @@ export default function HelpFeedback() {
           {siteConfig.contacts.map((item, idx) => (
             <Card key={idx} shadow="none">
               <CardHeader className="flex gap-3">
-                <CustomizedAvatar name={item.name[0]} idx={idx.toString()} />
+                <Link href={`/contact/${item.name.toLowerCase()}`}>
+                  <CustomizedAvatar
+                    name={item.name[0]}
+                    idx={idx.toString()}
+                    avatar={item.avatar || ""}
+                  />
+                </Link>
                 <div className="text-left">
                   <div>{item.name}</div>
-                  <div>+86 {item.phone}</div>
+                  <div>{item.phone}</div>
                   <div>
                     <Link href={`mailto:${item.email}`}>{item.email}</Link>
                   </div>
@@ -55,9 +70,6 @@ export default function HelpFeedback() {
               </CardHeader>
             </Card>
           ))}
-          <Card shadow="none">
-            <CardBody>Beijing Time: 9 am - 6 am</CardBody>
-          </Card>
         </div>
       </div>
     </div>
