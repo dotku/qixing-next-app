@@ -78,10 +78,12 @@ export const siteConfig = {
       avatar: "/assets/avatars/4681714182498_.pic.jpg",
     },
     {
-      name: "Tianyun Xu",
+      name: "Mary Xu",
       title: "Au Pair Consultant",
       phone: "+86 18126364051",
       email: "xutianyun94@gmail.com",
+      wa: "+8618621522961",
+      avatar: "/assets/avatars/4711714293774_.pic.jpg",
     },
     {
       name: "Abby",
